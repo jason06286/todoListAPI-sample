@@ -1,8 +1,7 @@
 const http = require('http');
-const headers = require('./headers');
 const { v4: uuidv4 } = require('uuid');
-const successHandle = require('./successHandle');
-const errorHandle = require('./errorHandle');
+const headers = require('./headers');
+const { successHandle, errorHandle } = require('./handler');
 
 const todos = []
 
